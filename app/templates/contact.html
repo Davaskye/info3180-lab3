@@ -8,19 +8,19 @@
 <form method="POST" action="{{ url_for('contact') }}">
     {{ form.csrf_token }}
 
-    {{ form.name.label }} <span>(Required)</span>
+    {{ form.name.label }} <span class = "req">(Required)</span>
     <p>Please enter your full name</p>
     {{ form.name(size=40) }}
 <br><br>
-    {{ form.email.label }} <span>(Required)</span>
+    {{ form.email.label }} <span class = "req">(Required)</span>
     <p>Please enter your e-mail address</p>
     {{ form.email(size=40) }}
 <br><br>
-    {{ form.subject.label }} <span>(Required)</span>
+    {{ form.subject.label }} <span class = "req">(Required)</span>
     <p>Please enter the subject for your message</p>
     {{ form.subject(size=40) }}
 <br><br>
-    {{ form.message.label }} <span>(Required)</span>
+    {{ form.message.label }} <span class = "req">(Required)</span>
     <p>Please enter the message you would like to send</p>
     {{ form.message(size=200) }}
 <br>

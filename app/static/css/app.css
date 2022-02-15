@@ -2,7 +2,7 @@ body {
     padding-top: 5rem;
 }
 
-span {
+.req {
     color: red;
     font-weight: bold;
 }
